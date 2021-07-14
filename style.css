@@ -961,11 +961,42 @@ SECTIONS
 
 .boxed {
   box-shadow: 0 30px 50px 0 rgba(1, 1, 1, 0.18);
-  padding: 8rem 4rem 8rem;
+  padding: 4rem 4rem 8rem;
   background-color: #ffffff;
   margin-top: -60px;
 }
+.item1 {
+  grid-area: header;
+  height: 350px;
+}
+.item2 {
+  grid-area: menu;
+  height: 500px;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  grid-gap: 10px;
+  /* padding: 10px; */
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
 .boxed.boxedp4 {
   padding-top: 4rem;
 }
@@ -1000,7 +1031,7 @@ SECTIONS
 }
 
 .section.gb {
-  background-color: #f6f6f6;
+  background-color: #f8f8f8f8;
 }
 
 .section.db {
