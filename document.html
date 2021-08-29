@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
     <link rel="stylesheet" href="style.css" />
 
     <!--[if lt IE 9]>
@@ -93,7 +94,8 @@
         </div>
       </div>
       <!-- END # MODAL LOGIN -->
-      <header class="header">
+
+      <header class="header header-normal">
         <div class="topbar clearfix">
           <div class="container">
             <div class="row-fluid">
@@ -220,7 +222,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li><a href="blog.html">News</a></li>
                 <li><a href="page-contact.html">Address</a></li>
                 <li class="iconitem">
@@ -235,23 +236,17 @@
         </div>
         <!-- end container -->
       </header>
-      <section
-        class="parallax event-section"
-        data-stellar-background-ratio="0.5"
-        style="background-image: url('./images/img/bg-banner.jpg')"
-      >
+
+      <section class="section db p120">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="tagline-message event-title text-center">
-                <h3 class="title">
-                  Biz sizga eng yaxshi va sifatli xizmatlarni taklif etamiz!
-                </h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                  iure ipsam quam.
-                </p>
-                <a href="#" class="btn btn-primary">Xizmat buyurtma qilish</a>
+              <div class="tagline-message page-title text-center">
+                <h3>Documents</h3>
+                <ul class="breadcrumb">
+                  <li><a href="index.html">Tuproq Bonitirovkasi</a></li>
+                  <li class="active">Documents</li>
+                </ul>
               </div>
             </div>
             <!-- end col -->
@@ -261,121 +256,180 @@
         <!-- end container -->
       </section>
       <!-- end section -->
-
-      <section class="section gb nopadtop">
-        <div class="container">
-          <div id="event-boxes" class="row event-boxes"></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-title text-center">
-            <h3>Xodimlar</h3>
-            <p>
-              Maecenas sit amet tristique turpis. Quisque porttitor eros quis
-              leo pulvinar, at hendrerit sapien iaculis. Donec consectetur
-              accumsan arcu, sit amet fringilla ex ultricies.
-            </p>
-          </div>
-          <!-- end title -->
-
-          <div id="team" class="row"></div>
-        </div>
-      </section>
-
-      <footer class="section footer noover">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4">
-              <div class="widget clearfix">
-                <h3 class="widget-title">
-                  <img
-                    src="./images/img/logo-ft.png"
-                    style="width: 320px"
-                    alt=""
-                  />
-                </h3>
-                <div class="newsletter-widget">
-                  <p>
-                    You can opt out of our newsletters at any time.<br />
-                    See our <a href="#">privacy policy</a>.
-                  </p>
-                  <form class="form-inline" role="search">
-                    <div class="form-1">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Enter email here.."
-                      />
-                      <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-paper-plane-o"></i>
-                      </button>
-                    </div>
-                  </form>
-                  <img
-                    src="images/payments.png"
-                    alt=""
-                    class="img-responsive"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3">
-              <div class="widget clearfix">
-                <h3 class="widget-title">Join us today</h3>
-                <p>
-                  Would you like to earn your profits by joining our team? Join
-                  us without losing time.
-                </p>
-                <a href="#" class="readmore">Became a Teacher</a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3">
-              <div class="widget clearfix">
-                <h3 class="widget-title">Kerakli link</h3>
-                <div class="tags-widget">
-                  <ul class="list-inline">
-                    <li><a href="#">Xizmatlar</a></li>
-                    <li><a href="#">Biz haqimizda</a></li>
-                    <li><a href="#">Yangiliklar</a></li>
-                    <li><a href="#">Galareya</a></li>
-                    <li><a href="#">Xodimlar</a></li>
-                    <li><a href="#">Bog'lanish</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-2 col-md-2">
-              <div class="widget clearfix">
-                <h3 class="widget-title">Qo'llab quvvatlash</h3>
-                <div class="list-widget">
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <div class="container img-box">
+        <div id="documentBox" class="row"></div>
+      </div>
     </div>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <section class="data-box">
+      <div class="section-title">
+        КОРХОНА ТАШКИЛ ТОПИШИНИНГ ТАШКИЛИЙ <br />
+        ХУҚУҚИЙ АСОСЛАРИ
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="title">1959 йил 20 апрел</div>
+          <div class="text">
+            Ўзбекистон ССР Министрлар Советининг 270-сонли қарорига асосан
+            ташкил этилган “Республика тупроқ экспедицияси” номи билан.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="title">1961 йил 6 июнь</div>
+          <div class="text">
+            Ўзбекистон ССР Қишлоқ хўжалиги вазирлигининг 467-сонли буйруғига
+            асосан “Республика тупроқ экспедицияси” “Узгипрозем” институти
+            таркибига киритилган.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="title">1969 йил 20 октябрь</div>
+          <div class="text">
+            Ўзбекистон ССР Министрлар Советининг 1591-р сонли қарорига асосан
+            Республика тупроқ экспедицияси” номи “Ер кадастри филиали”га
+            алмаштирилган
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="title">1999 йил 12 август</div>
+          <div class="text">
+            “Ўздаверлойиҳа” (“Узгипрозем”) ДИЛИнинг 16-сонли буйруғига асосан
+            “Ер кадастри филиали”, “Ер кадастри” шўъба корхонаси номига
+            ўзгартирилган.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="title">2007 йил 15 май</div>
+          <div class="text">
+            Ўзбекистон Республикаси ер ресурслари, геодезия, картография ва
+            давлат кадастри давлат қўмитасининг 72-сонли буйруғига асосан
+            “Тупроқ бонитировкаси” шўъба корхонаси номига ўзгартирилган.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="title">2019 йил 22 июн</div>
+          <div class="text">
+            Ўзбекистон Республикаси ер ресурслари, геодезия, картография ва
+            давлат кадастри давлат қўмитасининг 350-05-сонли буйруғига асосан
+            “Tuproq tarkibi va repozitoriysi, sifati tahlil markazi” davlat
+            unitar korxonasi номи билан фаолият юритган.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="title">2020 йил 7 сентябр</div>
+          <div class="text">
+            Ўзбекистон Республикаси Президентининг 2020 йил 7 сентябрдаги
+            ПҚ-4819 сонли қарорига асосан Ўзбекистон Республикаси Қишлоқ
+            хўжалиги вазирлиги таркибига ўтказилди.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <footer class="section footer noover">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="widget clearfix">
+              <h3 class="widget-title">
+                <img
+                  src="./images/img/logo-ft.png"
+                  style="width: 320px"
+                  alt=""
+                />
+              </h3>
+              <div class="newsletter-widget">
+                <p>
+                  You can opt out of our newsletters at any time.<br />
+                  See our <a href="#">privacy policy</a>.
+                </p>
+                <form class="form-inline" role="search">
+                  <div class="form-1">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter email here.."
+                    />
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-paper-plane-o"></i>
+                    </button>
+                  </div>
+                </form>
+                <img src="images/payments.png" alt="" class="img-responsive" />
+              </div>
+              <!-- end newsletter -->
+            </div>
+            <!-- end widget -->
+          </div>
+          <!-- end col -->
+
+          <div class="col-lg-3 col-md-3">
+            <div class="widget clearfix">
+              <h3 class="widget-title">Join us today</h3>
+              <p>
+                Would you like to earn your profits by joining our team? Join us
+                without losing time.
+              </p>
+              <a href="#" class="readmore">Became a Teacher</a>
+            </div>
+            <!-- end widget -->
+          </div>
+          <!-- end col -->
+
+          <div class="col-lg-3 col-md-3">
+            <div class="widget clearfix">
+              <h3 class="widget-title">Kerakli link</h3>
+              <div class="tags-widget">
+                <ul class="list-inline">
+                  <li><a href="#">Xizmatlar</a></li>
+                  <li><a href="#">Biz haqimizda</a></li>
+                  <li><a href="#">Yangiliklar</a></li>
+                  <li><a href="#">Galareya</a></li>
+                  <li><a href="#">Xodimlar</a></li>
+                  <li><a href="#">Bog'lanish</a></li>
+                </ul>
+              </div>
+              <!-- end list-widget -->
+            </div>
+            <!-- end widget -->
+          </div>
+          <!-- end col -->
+
+          <div class="col-lg-2 col-md-2">
+            <div class="widget clearfix">
+              <h3 class="widget-title">Qo'llab quvvatlash</h3>
+              <div class="list-widget">
+                <ul>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                  <li><a href="#">Lorem ipsum dolor.</a></li>
+                </ul>
+              </div>
+              <!-- end list-widget -->
+            </div>
+            <!-- end widget -->
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- jQuery Files -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/parallax.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/app.js"></script>
-    <script type="module" src="dataJs/serviceData.js"></script>
+    <script type="module" src="dataJs/documents.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

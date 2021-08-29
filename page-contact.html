@@ -98,7 +98,7 @@
         <div class="topbar clearfix">
           <div class="container">
             <div class="row-fluid">
-                <div class="col-md-6 col-sm-6 text-left">
+              <div class="col-md-6 col-sm-6 text-left">
                 <p>
                   <strong><i class="fa fa-phone"></i></strong> (371) 278 50 99
                   &nbsp;&nbsp; <strong><i class="fa fa-envelope"></i></strong>
@@ -160,7 +160,7 @@
         <!-- end topbar -->
 
         <div class="container">
-           <nav class="navbar navbar-default yamm">
+          <nav class="navbar navbar-default yamm">
             <div class="navbar-header">
               <button
                 type="button"
@@ -177,17 +177,53 @@
               </button>
               <div class="logo-normal">
                 <a class="navbar-brand" href="index.html"
-                  ><img style="width: 150px;" src="images/img/logo-nav.png" alt=""
+                  ><img
+                    style="width: 150px"
+                    src="images/img/logo-nav.png"
+                    alt=""
                 /></a>
               </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Bosh Sahifa</a></li>
-                <li><a href="events.html">Xizmatlar</a></li>
-                <li><a href="about-us.html">Biz Haqimizda</a></li>
-                <li><a href="blog.html" >Yangiliklar</span></a></li>
-                <li><a href="page-contact.html">Bog'lanish</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="document.html">Document</a></li>
+                <li><a href="events.html">Service</a></li>
+                <li class="dropdown hassubmenu">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="false"
+                    >Media <span class="fa fa-angle-down"></span
+                  ></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="video-gallery.html">Video</a></li>
+                    <li><a href="photo-gallery.html">Photo</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown hassubmenu">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="false"
+                    >Labaratory <span class="fa fa-angle-down"></span
+                  ></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="mobile-labaratory.html">Mobile labaratory</a>
+                    </li>
+                    <li>
+                      <a href="static-labaratory.html">Static labaratory</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li><a href="blog.html">News</a></li>
+                <li><a href="page-contact.html">Address</a></li>
                 <li class="iconitem">
                   <a href="#" data-toggle="modal" data-target="#login-modal"
                     ><i class="fa fa-search"></i
@@ -266,44 +302,44 @@
             <!-- end contactv2 -->
 
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <div class="section-title text-center">
-                  <h3>Contact Form</h3>
-                  <p>
-                    Maecenas sit amet tristique turpis. Quisque porttitor eros
-                    quis leo pulvinar, at hendrerit sapien iaculis.
-                  </p>
-                </div>
-                <!-- end title -->
-
-                <form class="big-contact-form" role="search">
+              <div class="section-title text-center">
+                <h3>Contact Form</h3>
+                <p>
+                  Maecenas sit amet tristique turpis. Quisque porttitor eros
+                  quis leo pulvinar, at hendrerit sapien iaculis.
+                </p>
+              </div>
+              <!-- end title -->
+              <form id="registerForm" class="big-contact-form" role="search">
+                <div class="col-md-6">
                   <input
+                    id="name"
                     type="text"
                     class="form-control"
                     placeholder="Enter your name.."
                   />
                   <input
+                    id="email"
                     type="email"
                     class="form-control"
                     placeholder="Enter email.."
                   />
                   <input
+                    id="phone"
                     type="text"
                     class="form-control"
                     placeholder="Your phone.."
                   />
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Subject.."
-                  />
+                </div>
+                <div class="col-md-6">
                   <textarea
+                    id="text"
                     class="form-control"
                     placeholder="Message goes here.."
                   ></textarea>
                   <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-              </div>
+                </div>
+              </form>
               <!-- end col -->
             </div>
             <!-- end row -->
@@ -412,13 +448,14 @@
     <!-- end wrapper -->
 
     <!-- jQuery Files -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
-    <!-- VIDEO BG PLUGINS -->
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAkADq7R0xf6ami9YirAM1N-yl7hdnYBhM "></script>
-    <!-- MAP & CONTACT -->
     <script src="js/map.js"></script>
+    <script type="module" src="dataJs/contact.js"></script>
   </body>
 </html>

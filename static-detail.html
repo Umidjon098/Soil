@@ -33,17 +33,13 @@
       href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
       rel="stylesheet"
     />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
     <!-- Custom & Default Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/pagination.css" />
-
-
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -67,7 +63,7 @@
         role="dialog"
         aria-hidden="true"
         style="display: none"
-      > 
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <!-- Begin # DIV Form -->
@@ -83,10 +79,10 @@
                 </button>
                 <div class="modal-body">
                   <input
-                    id="searchInput"
                     class="form-control"
                     type="text"
-                    placeholder="Search"
+                    placeholder="What you are looking for?"
+                    required
                   />
                 </div>
               </form>
@@ -102,20 +98,12 @@
         <div class="topbar clearfix">
           <div class="container">
             <div class="row-fluid">
-              <div class="col-md-6 col-sm-6 text-left lanuage">
+              <div class="col-md-6 col-sm-6 text-left">
                 <p>
                   <strong><i class="fa fa-phone"></i></strong> (371) 278 50 99
                   &nbsp;&nbsp; <strong><i class="fa fa-envelope"></i></strong>
                   <a href="mailto:#">bonitirovka@mail.ru</a>
                 </p>
-                <div class="change-language">
-                 <div class="flag"><img src="./images/uzb.png" alt=""></div>
-                <select name="language" id="selectLanguage">
-                 <option value="uzb">UZB</option>
-                 <option value="rus">RUS</option>
-                 <option value="eng">ENG</option>
-                </select>
-                 </div>
               </div>
               <!-- end left -->
               <div class="col-md-6 col-sm-6 hidden-xs text-right">
@@ -161,18 +149,13 @@
                     ><i class="fa fa-pinterest"></i
                   ></a>
                 </div>
-                <!-- end social -->
               </div>
-              <!-- end left -->
             </div>
-            <!-- end row -->
           </div>
-          <!-- end container -->
         </div>
-        <!-- end topbar -->
 
         <div class="container">
-     <nav class="navbar navbar-default yamm">
+          <nav class="navbar navbar-default yamm">
             <div class="navbar-header">
               <button
                 type="button"
@@ -189,31 +172,52 @@
               </button>
               <div class="logo-normal">
                 <a class="navbar-brand" href="index.html"
-                  ><img style="width: 150px;" src="images/img/logo-nav.png" alt=""
+                  ><img
+                    style="width: 150px"
+                    src="images/img/logo-nav.png"
+                    alt=""
                 /></a>
               </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                   <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.html">About</a></li>
                 <li><a href="document.html">Document</a></li>
                 <li><a href="events.html">Service</a></li>
                 <li class="dropdown hassubmenu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Media <span class="fa fa-angle-down"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                         <li><a href="video-gallery.html">Video</a></li>
-                        <li><a href="photo-gallery.html">Photo</a></li>
-                     </ul>
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="false"
+                    >Media <span class="fa fa-angle-down"></span
+                  ></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="video-gallery.html">Video</a></li>
+                    <li><a href="photo-gallery.html">Photo</a></li>
+                  </ul>
                 </li>
                 <li class="dropdown hassubmenu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Labaratory <span class="fa fa-angle-down"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                         <li><a href="mobile-labaratory.html">Mobile labaratory</a></li>
-                        <li><a href="static-labaratory.html">Static labaratory</a></li>
-                     </ul>
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-expanded="false"
+                    >Labaratory <span class="fa fa-angle-down"></span
+                  ></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="mobile-labaratory.html">Mobile labaratory</a>
+                    </li>
+                    <li>
+                      <a href="static-labaratory.html">Static labaratory</a>
+                    </li>
+                  </ul>
                 </li>
-                  
-                <li><a  href="blog.html">News</a></li>
+
+                <li><a href="blog.html">News</a></li>
                 <li><a href="page-contact.html">Address</a></li>
                 <li class="iconitem">
                   <a href="#" data-toggle="modal" data-target="#login-modal"
@@ -223,145 +227,136 @@
               </ul>
             </div>
           </nav>
-          <!-- end navbar -->
         </div>
-        <!-- end container -->
       </header>
-
       <section class="section db p120">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="tagline-message page-title text-center">
-                <h3>Yangiliklar</h3>
+                <h3>Static Labaratory</h3>
                 <ul class="breadcrumb">
                   <li><a href="index.html">Tuproq Bonitirovkasi</a></li>
-                  <li class="active">Yangiliklar</li>
+                  <li class="active">Static Labaratory</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="container labaratory-box">
+          <div class="row">
+            <div id="card" class="col-md-12"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="section footer noover">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <div class="widget clearfix">
+                <h3 class="widget-title">
+                  <img
+                    src="./images/img/logo-ft.png"
+                    style="width: 320px"
+                    alt=""
+                  />
+                </h3>
+                <div class="newsletter-widget">
+                  <p>
+                    You can opt out of our newsletters at any time.<br />
+                    See our <a href="#">privacy policy</a>.
+                  </p>
+                  <form class="form-inline" role="search">
+                    <div class="form-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter email here.."
+                      />
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-paper-plane-o"></i>
+                      </button>
+                    </div>
+                  </form>
+                  <img
+                    src="images/payments.png"
+                    alt=""
+                    class="img-responsive"
+                  />
+                </div>
+                <!-- end newsletter -->
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-3">
+              <div class="widget clearfix">
+                <h3 class="widget-title">Join us today</h3>
+                <p>
+                  Would you like to earn your profits by joining our team? Join
+                  us without losing time.
+                </p>
+                <a href="#" class="readmore">Became a Teacher</a>
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-3">
+              <div class="widget clearfix">
+                <h3 class="widget-title">Kerakli link</h3>
+                <div class="tags-widget">
+                  <ul class="list-inline">
+                    <li><a href="#">Xizmatlar</a></li>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Yangiliklar</a></li>
+                    <li><a href="#">Galareya</a></li>
+                    <li><a href="#">Xodimlar</a></li>
+                    <li><a href="#">Bog'lanish</a></li>
+                  </ul>
+                </div>
+                <!-- end list-widget -->
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-2 col-md-2">
+              <div class="widget clearfix">
+                <h3 class="widget-title">Qo'llab quvvatlash</h3>
+                <div class="list-widget">
+                  <ul>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                    <li><a href="#">Lorem ipsum dolor.</a></li>
+                  </ul>
+                </div>
+                <!-- end list-widget -->
+              </div>
+              <!-- end widget -->
             </div>
             <!-- end col -->
           </div>
           <!-- end row -->
         </div>
         <!-- end container -->
-      </section>
-      <!-- end section -->
-      <section class="section gb nopadtop">
-        <div class="container">
-          <div class="boxed">
-            <div class="row">
-              <div class="col-md-8"> 
-                <h3>
-                 <a href="blog-single.html" title="">So'ngi yangiliklar</a>
-                </h3>
-                 <div  id="newsBox"  class="content blog-list"></div>
-                <div class="row">
-                  <div class="col-md-12">
-                     <div class="pagination">
-                         <ul> <!--pages or li are comes from javascript --> </ul>
-                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sidebar col-md-4">
-                <div class="widget clearfix">
-                  <h3 class="widget-title">Eng ko'p o'qilgan</h3>
-                  <div class="post-widget">
-                    <div class="media">
-                      <img
-                        src="./images/img/news1.jpg"
-                        alt=""
-                        class="img-responsive alignleft img-rounded"
-                      />
-                      <div class="media-body">
-                        <h5 class="mt-0">
-                          <a href="blog-single.html"
-                            >Learning English Like a Pro..</a
-                          >
-                        </h5>
-                        <div class="blog-meta">
-                          <ul class="list-inline">
-                            <li>4 days ago</li>
-                            <li>
-                              <span>by</span> <a href="#">Edulogy Team</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- end blog-meta -->
-                      </div>
-                    </div>
-
-                    <div class="media">
-                      <img
-                        src="./images/img/news2.jpg"
-                        alt=""
-                        class="img-responsive alignleft img-rounded"
-                      />
-                      <div class="media-body">
-                        <h5 class="mt-0">
-                          <a href="blog-single.html"
-                            >How to create a beautiful website with Bootstrap</a
-                          >
-                        </h5>
-                        <div class="blog-meta">
-                          <ul class="list-inline">
-                            <li>5 days ago</li>
-                            <li><span>by</span> <a href="#">Boby DOE</a></li>
-                          </ul>
-                        </div>
-                        <!-- end blog-meta -->
-                      </div>
-                    </div>
-
-                    <div class="media">
-                      <img
-                        src="./images/img/news3.jpg"
-                        alt=""
-                        class="img-responsive alignleft img-rounded"
-                      />
-                      <div class="media-body">
-                        <h5 class="mt-0">
-                          <a href="blog-single.html"
-                            >Don't forget to update your Google web master
-                            tools</a
-                          >
-                        </h5>
-                        <div class="blog-meta">
-                          <ul class="list-inline">
-                            <li>6 days ago</li>
-                            <li><span>by</span> <a href="#">Martin</a></li>
-                          </ul>
-                        </div>
-                        <!-- end blog-meta -->
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end post-widget -->
-                </div>
-              </div>
-              <!-- end sidebar -->
-            </div>
-            <!-- end row -->
-          </div>
-          <!-- end boxed --> 
-        </div>
-        <!-- end container -->
-      </section>
-
-    
+      </footer>
+    </div>
+    <!-- end wrapper -->
 
     <!-- jQuery Files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/pagination.js"></script>
-    <script type="module"  src="dataJs/newsData.js"></script>
-    <script type="module"  src="js/main.js"></script>
-
+    <script type="module" src="dataJs/staticDetail.js"></script>
   </body>
 </html>
