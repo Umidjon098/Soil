@@ -27,7 +27,10 @@
       rel="stylesheet"
     />
    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-
+ <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/carousel.css" />
@@ -141,8 +144,8 @@
         </div>
 
         <div class="container">
-     <nav class="navbar navbar-default yamm">
-            <div class="navbar-header">
+        <nav class="navbar navbar-default yamm">
+            <div class="  navbar-header">
               <button
                 type="button"
                 class="navbar-toggle collapsed"
@@ -157,38 +160,31 @@
                 <span class="icon-bar"></span>
               </button>
               <div class="logo-normal">
-                <a class="navbar-brand" href="index.html"
-                  ><img style="width: 150px;" src="images/img/logo-nav.png" alt=""
+                <a class="navbar-brand" href="index.html" ><img style="width: 50px;" src="./images/logo1.png" alt=""
                 /></a>
               </div>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">About</a></li>
-                <li><a href="document.html">Document</a></li>
-                <li><a href="events.html">Service</a></li>
-                <li class="dropdown hassubmenu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Media <span class="fa fa-angle-down"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                         <li><a href="video-gallery.html">Video</a></li>
-                        <li><a href="photo-gallery.html">Photo</a></li>
-                     </ul>
-                </li>
-                <li class="dropdown hassubmenu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Labaratory <span class="fa fa-angle-down"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                         <li><a href="mobile-labaratory.html">Mobile labaratory</a></li>
-                        <li><a href="static-labaratory.html">Static labaratory</a></li>
-                     </ul>
-                </li>
-                  
-                <li><a  href="blog.html">News</a></li>
-                <li><a href="page-contact.html">Address</a></li>
-                <li class="iconitem">
-                  <a href="#" data-toggle="modal" data-target="#login-modal"
-                    ><i class="fa fa-search"></i
-                  ></a>
-                </li>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a id="about"   href="index.html">Biz Haqimizdaut</a></li>
+                  <li><a id="doc" href="document.html">Dokument</a></li>
+                  <li><a id="ser" href="events.html">Hizmatlar</a></li>
+                  <li class="dropdown hassubmenu">
+                      <a id="med" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mediya<span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="video-gallery.html">Video</a></li>
+                          <li><a href="photo-gallery.html">Photo</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown hassubmenu">
+                      <a id="lab" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Labaratory <span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="mobile-labaratory.html">Mobile Labaratoriya</a></li>
+                          <li><a href="static-labaratory.html">Statik Labaratoriya</a></li>
+                      </ul>
+                  </li>
+                  <li><a id="new" href="blog.html">Yangiliklar</a></li>
+                  <li><a id="add" href="page-contact.html">Bog'lanish</a></li>
               </ul>
             </div>
           </nav>
@@ -214,11 +210,16 @@
       </section>
         
       <div class="container">
-          <div id="news-item"  class="news-detail-box"></div>
+ <div class="swiper mySwiper">
+            <div id="swiper" class="swiper-wrapper">
+              
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+          <div id="news-item" class="news-detail-box"></div>
+       
       </div>
-
-  
-   <footer class="section footer noover">
+  <footer class="section footer noover">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-md-4">
@@ -306,16 +307,26 @@
           <!-- end row -->
         </div>
         <!-- end container -->
-    </footer>
+      </footer>
 
+     
 
     <!-- jQuery Files -->
-   
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/app.js"></script>
     <script type="module" src="dataJs/newsDetailsData.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+     <script src="multiLang/navbarLang.js"></script>
+    <script src="multiLang/footerLang.js"></script>
   </body>
 </html>

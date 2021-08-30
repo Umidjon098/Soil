@@ -16,7 +16,7 @@ function getAboutData() {
            <div class="col-md-4 hidden-sm hidden-xs">
               <div id="imageAbout" class="custom-module">
                 <img
-                  src=${img}
+                  src=${img.file}
                   alt="About image"
                   class="img-responsive wow slideInLeft"
                 />
@@ -35,10 +35,10 @@ function getAboutData() {
                 </h2>
                 <p class="text">${
                   lang === "uzb"
-                    ? data.text_uz.slice(0, 600)
+                    ? data.text_uz.slice(0, 1000)
                     : lang === "eng"
-                    ? data.text_en.slice(0, 600)
-                    : data.text_ru.slice(0, 600)
+                    ? data.text_en.slice(0, 1000)
+                    : data.text_ru.slice(0, 1000)
                 } ....</p>
                 <div class="btn-wrapper title">
                   <a href="about-us.html" >Ko'proq o'qish...</a>
@@ -73,18 +73,22 @@ function setCarouselItem(item) {
   });
 }
 
-function getNewsData() {
+async function getNewsData() {
   const owl = document.querySelector(".owl-carousel");
-  axios(`${baseUrl}/api/v1/main/news/`).then((response) => {
-    let carouselItem = response.data.results
-      .map((data) => {
-        let img = data.images[0];
-        return `
+  await axios
+    .get(`${baseUrl}/api/v1/main/news/`, {
+      headers: { "Access-Control-Allow-Origin": "*" },
+    })
+    .then((response) => {
+      let carouselItem = response.data.results
+        .map((data) => {
+          let img = data.images[0];
+          return `
             <div id="newsBox" data-id=${data.id} class="caro-item card-up setID">
                 <div class="course-box">
                 <div class="image-wrap entry">
                   <img
-                    src="./images/img/5.jpg"
+                    src=${img.file}
                     alt=""
                     class="img-responsive"
                   />
@@ -105,11 +109,11 @@ function getNewsData() {
               </div>
             </div>
            `;
-      })
-      .join("");
-    owl.innerHTML = carouselItem;
-    setCarouselItem(owl);
-  });
+        })
+        .join("");
+      owl.innerHTML = carouselItem;
+      setCarouselItem(owl);
+    });
 }
 
 function getServiceData() {

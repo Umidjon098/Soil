@@ -46,6 +46,6 @@
 .pagination ul li.numb:hover,
 .pagination ul li:first-child:hover,
 .pagination ul li:last-child:hover {
-  color: #fff;
+  color: #fff !important;
   background: #86c232;
 }

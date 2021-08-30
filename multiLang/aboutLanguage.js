@@ -97,8 +97,8 @@ if (til === "eng") {
   ruleText.innerText = data.en.ruleText;
   moreRead.innerText = data.en.moreRead;
   moreSee.innerText = data.en.moreSee;
-  aboutTitle.innerText = data.en.aboutTitle;
-  serviceTitle.innerText = data.en.serviceTitle;
+  // aboutTitle.innerText = data.en.aboutTitle;
+  // serviceTitle.innerText = data.en.serviceTitle;
   serviceLink.innerText = data.en.serviceTitle;
   newsTitle.innerText = data.en.newsTitle;
   newsText.innerText = data.en.newsText;

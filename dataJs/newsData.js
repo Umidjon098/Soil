@@ -2,19 +2,27 @@ import { baseUrl } from "./baseUrl.js";
 $(document).ready(function () {
   getNewsData();
 });
-
+let massiveLength = 0;
 async function getNewsData(search) {
   await axios(`${baseUrl}/api/v1/main/news/`, {
     params: {
       search: search,
+      page_size: 4,
     },
   }).then((response) => {
-    const newsBox = document.querySelector("#newsBox");
-    let newsItem = response.data.results
-      .map((data) => {
-        let img = data.images[0];
-        const lang = window.localStorage.getItem("language");
-        return `
+    massiveLength = response.data.results.length;
+    if (response.data.results.length === 0) {
+      newsBox.innerHTML = `  
+             <div class="load-data">
+                <img src="./images/load-data.gif" alt="">
+              </div>`;
+    } else {
+      const newsBox = document.querySelector("#newsBox");
+      let newsItem = response.data.results
+        .map((data) => {
+          let img = data.images[0];
+          const lang = window.localStorage.getItem("language");
+          return `
                   <div  data-id=${
                     data.id
                   } class="blog-wrapper clearfix mt-4 item-news">
@@ -27,7 +35,13 @@ async function getNewsData(search) {
                           "/" +
                           data.created_date.slice(0, 10)
                         }</li>
+                        <li>
+                      <div class="seen"><i class="fas fa-eye"></i> 
+                        <span>${data.view_count}</span>
+                      </div>
+                        </li>
                       </ul>
+                  
                     </div>
                     <div class="blog-media">
                       <a href="" title="">
@@ -61,10 +75,15 @@ async function getNewsData(search) {
                     </div>
                   </div>
                 `;
-      })
-      .join("");
-    newsBox.innerHTML = newsItem;
+        })
+        .join("");
+      newsBox.innerHTML = newsItem;
+    }
   });
+}
+if (massiveLength <= 4) {
+  const pagination = document.querySelector(".pagination");
+  pagination.classList.add("d-none");
 }
 const item = document.querySelector("#newsBox");
 item.addEventListener("click", getNewsDetail);
@@ -82,14 +101,3 @@ function Search(e) {
   e.preventDefault();
   getNewsData(searchInput.value);
 }
-$(".pagination").pagination({
-  dataSource: [1, 2, 3, 4, 5, 6, 7, ...100],
-  pageSize: 5,
-  showPrevious: false,
-  showNext: false,
-  callback: function (data, pagination) {
-    // template method of yourself
-    var html = template(data);
-    dataContainer.html(html);
-  },
-});

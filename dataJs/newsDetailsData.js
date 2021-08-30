@@ -1,16 +1,29 @@
 import { baseUrl } from "./baseUrl.js";
 const newsDetail = document.getElementById("news-item");
+const swiper = document.getElementById("swiper");
 getNewsDetail();
 
-function getNewsDetail() {
+async function getNewsDetail() {
   const id = localStorage.getItem("currentID");
   const lang = window.localStorage.getItem("language");
-
-  axios(`${baseUrl}/api/v1/main/news/${id}`)
+  await axios.post(`${baseUrl}/api/v1/main/news/${id}/views_count/`);
+  await axios(`${baseUrl}/api/v1/main/news/${id}`)
     .then((response) => {
+      swiper.innerHTML = `
+      ${response.data.images
+        .map((data) => {
+          return `
+                    <div class="swiper-slide"
+                          <img src=${data.file} alt="About image"/>
+                     </div>
+                      `;
+        })
+        .join("")} 
+      `;
       let news = `
                  <div class="box-header">
-                      <div class="date"><i class="fas fa-calendar-day"></i> 
+                      <div class="date">
+                      <i class="fas fa-calendar-day"></i> 
                       <span>${
                         response.data.created_date.slice(11, 16) +
                         "/" +
@@ -44,26 +57,15 @@ function getNewsDetail() {
                           <div class="media-box">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div id="aboutCarousel" class="owl-carousel">
-                                        ${response.data.images
-                                          .map((data) => {
-                                            return `
-                                                    <img src=${data.file} alt="About image"/>
-                                                    `;
-                                          })
-                                          .join("")}
-                                       </div>
-                                     </div>
+                              
                                      <div class=${
                                        response.data.video === null
                                          ? "d-none"
                                          : "col-md-12"
                                      }>
-                                        <video controls>
-                                        <source src=${
+                                        <iframe width="560" height="315" src=${
                                           response.data.video
-                                        } type="video/mp4">
-                                        </video>
+                                        } title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                      </div>
                                 </div>
                           </div>
