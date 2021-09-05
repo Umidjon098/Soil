@@ -6,7 +6,7 @@ $(document).ready(function () {
     reset: true,
   });
 
-  sr.reveal(".title");
+  // sr.reveal(".title");
 
   window.addEventListener("scroll", function () {
     if (this.scrollY > 2800) {

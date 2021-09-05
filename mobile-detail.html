@@ -4,27 +4,18 @@
 <html class="no-js" lang="en">
   <!--<![endif]-->
   <head>
-    <!-- Basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Mobile Meta -->
     <meta
       name="viewport"
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
-    <!-- Site Meta -->
-    <title>Tuproq Bonitirovkasi</title>
+    <title>TUPROQSIFATTAHLIL DUK</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
-    <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900"
       rel="stylesheet"
@@ -33,18 +24,21 @@
       href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
       rel="stylesheet"
     />
-
-    <!-- Custom & Default Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </head>
   <body>
     <!-- LOADER -->
@@ -98,16 +92,46 @@
         <div class="topbar clearfix">
           <div class="container">
             <div class="row-fluid">
-              <div class="col-md-6 col-sm-6 text-left">
+              <div class="col-md-6 col-sm-6 text-left lanuage">
                 <p>
                   <strong><i class="fa fa-phone"></i></strong> (371) 278 50 99
                   &nbsp;&nbsp; <strong><i class="fa fa-envelope"></i></strong>
                   <a href="mailto:#">bonitirovka@mail.ru</a>
                 </p>
+                <div class="change-language">
+                  <select name="language" id="selectLanguage">
+                    <option id="langItem" value="uzb">UZB</option>
+                    <option id="langItem" value="rus">РУС</option>
+                    <option id="langItem" value="eng">ENG</option>
+                  </select>
+                </div>
               </div>
-              <!-- end left -->
               <div class="col-md-6 col-sm-6 hidden-xs text-right">
                 <div class="social">
+                  <a
+                    class="youtube"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Youtube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    class="telegram"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Telegram"
+                    ><i class="fab fa-telegram-plane"></i
+                  ></a>
+                  <a
+                    class="instagram"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                   <a
                     class="facebook"
                     href="#"
@@ -115,38 +139,6 @@
                     data-placement="bottom"
                     title="Facebook"
                     ><i class="fa fa-facebook"></i
-                  ></a>
-                  <a
-                    class="twitter"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Twitter"
-                    ><i class="fa fa-twitter"></i
-                  ></a>
-                  <a
-                    class="google"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Google Plus"
-                    ><i class="fa fa-google-plus"></i
-                  ></a>
-                  <a
-                    class="linkedin"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Linkedin"
-                    ><i class="fa fa-linkedin"></i
-                  ></a>
-                  <a
-                    class="pinterest"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Pinterest"
-                    ><i class="fa fa-pinterest"></i
                   ></a>
                 </div>
               </div>
@@ -250,11 +242,8 @@
             <div class="col-lg-4 col-md-4">
               <div class="widget clearfix">
                 <h3 class="widget-title">
-                  <img
-                    src="./images/img/logo-ft.png"
-                    style="width: 320px"
-                    alt=""
-                  />
+                  <img class="ft-logo-img" src="./images/logo1.png" alt="" />
+                  TUPROQSIFATTAHLIL DUK
                 </h3>
                 <div class="newsletter-widget">
                   <p id="leftTitle">
@@ -292,7 +281,7 @@
                   Would you like to earn your profits by joining our team? Join
                   us without losing time.
                 </p>
-                <a id="followLink" href="#" class="readmore"
+                <a id="followLink" href="stuff.html" class="readmore"
                   >Became a Teacher</a
                 >
               </div>
@@ -313,7 +302,7 @@
                     <li>
                       <a id="link4" href="photo-gallery.html">Galareya</a>
                     </li>
-                    <li><a id="link5" href="about-us.html">Xodimlar</a></li>
+                    <li><a id="link5" href="stuff.html">Xodimlar</a></li>
                     <li>
                       <a id="link6" href="page-contact.html">Bog'lanish</a>
                     </li>

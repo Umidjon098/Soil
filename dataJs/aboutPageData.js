@@ -41,7 +41,13 @@ function getAboutData() {
                     : data.text_ru.slice(0, 1000)
                 } ....</p>
                 <div class="btn-wrapper title">
-                  <a href="about-us.html" >Ko'proq o'qish...</a>
+                  <a href="about-us.html" >${
+                    lang === "uzb"
+                      ? "Ko'proq o'qish"
+                      : lang === "eng"
+                      ? "See more"
+                      : "Узнать больше"
+                  }</a>
                 </div>               
               </div>
             </div>
@@ -150,7 +156,13 @@ function getServiceData() {
                               : data.about_ru.slice(0, 120) + "..."
                           }
                           </p>
-                          <a href="#" class="readmore">Ko'proq o'qish</a>
+                          <a href="#" class="readmore">${
+                            lang === "uzb"
+                              ? "Ko'proq o'qish"
+                              : lang === "eng"
+                              ? "See more"
+                              : "Узнать больше"
+                          }</a>
                         </div>
                     </div> 
                    `;

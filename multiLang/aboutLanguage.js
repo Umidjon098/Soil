@@ -7,6 +7,7 @@ const data = {
     moreSee: "Ko'proq ko'rish ",
     aboutTitle: " Biz haqimizda",
     serviceTitle: "Xizmatlar",
+    serviceLink: "Xizmatlar",
     newsTitle: "So'ngi Yangiliklar",
     newsText:
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. Debitis, veritatis  voluptatibus ad illum dolor vel nesciunt atque numquam.Autem ipsam esse officia facilis nisi suscipit quisquam natus",
@@ -22,6 +23,9 @@ const data = {
     clientsTitle: "Mijozlar soni",
     clientsText:
       "Quisque porttitor eros quis leo pulvinar, at hendrerit sapien",
+    alertTitle: "Eslatma: ",
+    subscribe: "Azo Bo'lish",
+    msg: "Telegram kanalimizga azo bo'ling!",
   },
   en: {
     homeText: "SOIL COMPOSITION AND REPOSITORY, QUALITY ANALYSIS CENTER",
@@ -31,6 +35,7 @@ const data = {
     moreSee: "See more",
     aboutTitle: "About us",
     serviceTitle: "Services",
+    serviceLink: "Services",
     newsTitle: "Latest News",
     newsText:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. natus ",
@@ -46,15 +51,20 @@ const data = {
     clientsTitle: "Number of customers",
     clientsText:
       "Quisque porttitor eros quis leo pulvinar, at hendrerit sapien",
+    alertTitle: "Alert",
+    subscribe: "Subscribe",
+    msg: "Subscribe to our Telegram channel!",
   },
   ru: {
     homeText: "СОСТАВ ПОЧВЫ, ЦЕНТР АНАЛИЗА КАЧЕСТВА",
     ruleText:
       "Наша важнейшая задача - реформирование системы управления аграрным сектором, внедрение передовых технологий для рационального использования земельных и водных ресурсов, обеспечения продовольственной безопасности",
     moreRead: "Подробнее",
+    moreSee: "узнать больше",
     подробнееСм: "Узнать больше",
     aboutTitle: "О нас",
     serviceTitle: "Услуги",
+    serviceLink: "Услуги",
     newsTitle: "Последние новости",
     newsText:
       "Lorem ipsum dolor sit amet, conctetur adipisicing elit. Quisquam, iure in, ab animi fuga atque aut nesciunt nulla, labore earum veritatis. natus",
@@ -71,6 +81,9 @@ const data = {
     clientsText:
       "Quisque porttitor eros quis leo pulvinar, at hendrerit sapien",
   },
+  alertTitle: "Примечание",
+  subscribe: "подписать",
+  msg: "Подписывайтесь на наш Telegram канал!",
 };
 
 let homeText = document.getElementById("homeText");
@@ -91,6 +104,10 @@ let areaQuantity = document.getElementById("areaQuantity");
 let quantityText = document.getElementById("quantityText");
 let clientsTitle = document.getElementById("clientsTitle");
 let clientsText = document.getElementById("clientsText");
+let alertTitle = document.getElementById("alert-title");
+let msg = document.getElementById("msg");
+let subscribe = document.getElementById("subscribe");
+
 const til = localStorage.getItem("language");
 if (til === "eng") {
   homeText.innerText = data.en.homeText;
@@ -99,7 +116,7 @@ if (til === "eng") {
   moreSee.innerText = data.en.moreSee;
   // aboutTitle.innerText = data.en.aboutTitle;
   // serviceTitle.innerText = data.en.serviceTitle;
-  serviceLink.innerText = data.en.serviceTitle;
+  serviceLink.innerText = data.en.serviceLink;
   newsTitle.innerText = data.en.newsTitle;
   newsText.innerText = data.en.newsText;
   allNews.innerText = data.en.allNews;
@@ -111,14 +128,17 @@ if (til === "eng") {
   quantityText.innerText = data.en.areaQuantity;
   clientsTitle.innerText = data.en.clientsTitle;
   clientsText.innerText = data.en.clientsText;
+  alertTitle.innerText = data.en.alertTitle;
+  msg.innerText = data.en.msg;
+  subscribe.innerText = data.en.subscribe;
 } else if (til === "rus") {
   homeText.innerText = data.ru.homeText;
   ruleText.innerText = data.ru.ruleText;
   moreRead.innerText = data.ru.moreRead;
   moreSee.innerText = data.ru.moreSee;
-  aboutTitle.innerText = data.ru.aboutTitle;
-  serviceTitle.innerText = data.ru.serviceTitle;
-  serviceLink.innerText = data.ru.serviceTitle;
+  // aboutTitle.innerText = data.ru.aboutTitle;
+  // serviceTitle.innerText = data.ru.serviceTitle;
+  serviceLink.innerText = data.ru.serviceLink;
   newsTitle.innerText = data.ru.newsTitle;
   newsText.innerText = data.ru.newsText;
   allNews.innerText = data.ru.allNews;
@@ -130,14 +150,17 @@ if (til === "eng") {
   quantityText.innerText = data.ru.quantityText;
   clientsTitle.innerText = data.ru.clientsTitle;
   clientsText.innerText = data.ru.clientsText;
+  alertTitle.innerText = data.ru.alertTitle;
+  msg.innerText = data.ru.msg;
+  subscribe.innerText = data.ru.subscribe;
 } else if (til === "uzb") {
   homeText.innerText = data.uz.homeText;
   ruleText.innerText = data.uz.ruleText;
   moreRead.innerText = data.uz.moreRead;
   moreSee.innerText = data.uz.moreSee;
-  aboutTitle.innerText = data.uz.aboutTitle;
-  serviceTitle.innerText = data.uz.serviceTitle;
-  serviceLink.innerText = data.uz.serviceTitle;
+  // aboutTitle.innerText = data.uz.aboutTitle;
+  // serviceTitle.innerText = data.uz.serviceTitle;
+  serviceLink.innerText = "Xizmatlar";
   newsTitle.innerText = data.uz.newsTitle;
   newsText.innerText = data.uz.newsText;
   allNews.innerText = data.uz.allNews;
@@ -149,4 +172,7 @@ if (til === "eng") {
   quantityText.innerText = data.uz.areaQuantity;
   clientsTitle.innerText = data.uz.clientsTitle;
   clientsText.innerText = data.uz.clientsText;
+  alertTitle.innerText = data.uz.alertTitle;
+  msg.innerText = data.uz.msg;
+  subscribe.innerText = data.uz.subscribe;
 }

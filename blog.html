@@ -3,28 +3,19 @@
 <!--[if gt IE 9]><!-->
 <html class="no-js" lang="en">
   <!--<![endif]-->
-  <head>
-    <!-- Basic -->
+ <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- Mobile Meta -->
     <meta
       name="viewport"
       content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
-    <!-- Site Meta -->
-    <title>Tuproq Bonitirovkasi</title>
+    <title>TUPROQSIFATTAHLIL DUK</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
-    <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900"
       rel="stylesheet"
@@ -33,26 +24,15 @@
       href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
       rel="stylesheet"
     />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-      <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/pagination.css" />
-
-
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </head>
   <body>
     <!-- LOADER -->
@@ -113,17 +93,39 @@
                   <a href="mailto:#">bonitirovka@mail.ru</a>
                 </p>
                 <div class="change-language">
-                 <div class="flag"><img src="./images/uzb.png" alt=""></div>
-                <select name="language" id="selectLanguage">
-                 <option value="uzb">UZB</option>
-                 <option value="rus">RUS</option>
-                 <option value="eng">ENG</option>
-                </select>
-                 </div>
+                  <select name="language" id="selectLanguage">
+                    <option id="langItem" value="uzb">UZB</option>
+                    <option id="langItem" value="rus">РУС</option>
+                    <option id="langItem" value="eng">ENG</option>
+                  </select>
+                </div>
               </div>
-              <!-- end left -->
               <div class="col-md-6 col-sm-6 hidden-xs text-right">
                 <div class="social">
+                  <a
+                    class="youtube"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Youtube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    class="telegram"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Telegram"
+                    ><i class="fab fa-telegram-plane"></i
+                  ></a>
+                  <a
+                    class="instagram"
+                    href="#"
+                    data-tooltip="tooltip"
+                    data-placement="bottom"
+                    title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                   <a
                     class="facebook"
                     href="#"
@@ -132,48 +134,11 @@
                     title="Facebook"
                     ><i class="fa fa-facebook"></i
                   ></a>
-                  <a
-                    class="twitter"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Twitter"
-                    ><i class="fa fa-twitter"></i
-                  ></a>
-                  <a
-                    class="google"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Google Plus"
-                    ><i class="fa fa-google-plus"></i
-                  ></a>
-                  <a
-                    class="linkedin"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Linkedin"
-                    ><i class="fa fa-linkedin"></i
-                  ></a>
-                  <a
-                    class="pinterest"
-                    href="#"
-                    data-tooltip="tooltip"
-                    data-placement="bottom"
-                    title="Pinterest"
-                    ><i class="fa fa-pinterest"></i
-                  ></a>
                 </div>
-                <!-- end social -->
               </div>
-              <!-- end left -->
             </div>
-            <!-- end row -->
           </div>
-          <!-- end container -->
         </div>
-        <!-- end topbar -->
 
         <div class="container">
      <nav class="navbar navbar-default yamm">
@@ -193,7 +158,7 @@
               </button>
               <div class="logo-normal">
                 <a class="navbar-brand" href="index.html"
-                  ><img style="width: 150px;" src="images/img/logo-nav.png" alt=""
+                  ><img style="width: 50px;" src="images/logo1.png" alt=""
                 /></a>
               </div>
             </div>
@@ -353,7 +318,96 @@
         </div>
         <!-- end container -->
       </section>
+      <footer class="section footer noover">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <div class="widget clearfix">
+                <h3 class="widget-title">
+                    <img class="ft-logo-img"  src="./images/logo1.png" alt="">
+                     TUPROQSIFATTAHLIL DUK
+                </h3>
+                <div class="newsletter-widget">
+                  <p id="leftTitle">
+                    You can opt out of our newsletters at any time.<br />
+                    See our 
+                  </p>
+                  <form class="form-inline" role="search">
+                    <div class="form-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter email here.."
+                      />
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-paper-plane-o"></i>
+                      </button>
+                    </div>
+                  </form>
+                  <img
+                    src="images/payments.png"
+                    alt=""
+                    class="img-responsive"
+                  />
+                </div>
+                <!-- end newsletter -->
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
 
+            <div class="col-lg-3 col-md-3">
+              <div class="widget clearfix">
+                <h3 id="followTitle" class="widget-title">Join us today</h3>
+                <p id="followText">
+                  Would you like to earn your profits by joining our team? Join
+                  us without losing time.
+                </p>
+                <a id="followLink" href="stuff.html" class="readmore">Became a Teacher</a>
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-3">
+              <div class="widget clearfix">
+                <h3 id="popularLinks" class="widget-title">Kerakli link</h3>
+                <div class="tags-widget">
+                  <ul class="list-inline">
+                    <li><a id="link1" href="events.html">Xizmatlar</a></li>
+                    <li><a id="link2" href="about-us.html">Biz haqimizda</a></li>
+                    <li><a id="link3" href="blog.html">Yangiliklar</a></li>
+                    <li><a id="link4" href="photo-gallery.html">Galareya</a></li>
+                    <li><a id="link5" href="stuff.html">Xodimlar</a></li>
+                    <li><a id="link6" href="page-contact.html">Bog'lanish</a></li>
+                  </ul>
+                </div>
+                <!-- end list-widget -->
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
+            <div class="col-lg-2 col-md-2">
+              <div class="widget clearfix">
+                <h3 id="support" class="widget-title">Qo'llab quvvatlash</h3>
+                <div class="list-widget">
+                  <ul>
+                    <li><a href="tel: +998911234567">+998911234567</a></li>
+                    <li><a href="tel: +998999999999">+998999999999</a></li>
+                    <li><a href="tel: +998331234567">+998331234567</a></li>
+                    <li><a href="mailto:">soilunivercity@gmail.com</a></li>
+                  </ul>
+                </div>
+                <!-- end list-widget -->
+              </div>
+              <!-- end widget -->
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </footer>
     
 
     <!-- jQuery Files -->
@@ -374,7 +428,7 @@
     <script src="js/custom.js"></script>
     <script src="js/pagination.js"></script>
     <script type="module"  src="dataJs/newsData.js"></script>
-    <script type="module"  src="js/main.js"></script>
+     <script src="js/main.js"></script>
     <script src="multiLang/navbarLang.js"></script>
     <script src="multiLang/footerLang.js"></script>
   </body>

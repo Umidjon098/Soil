@@ -411,22 +411,27 @@ HEADER
   background-color: #3b5998;
 }
 
-.social a.pinterest {
-  background-color: #bd081c;
+.social a.youtube {
+  background-color: red;
 }
 
-.social a.twitter {
+.social a.telegram {
   background-color: #1da1f2;
 }
 
-.social a.google {
-  background-color: #34a853;
+.social a.instagram {
+  background: linear-gradient(
+    to bottom right,
+    #f58529,
+    #feda77,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
 }
-
-.social a.linkedin {
-  background-color: #0077b5;
+.ft-logo-img {
+  width: 50px;
 }
-
 .modal {
   top: 40%;
   margin: -20px auto;
@@ -2783,4 +2788,14 @@ RESPONSIVE
   .image h1 {
     font-size: 15px;
   }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
 }

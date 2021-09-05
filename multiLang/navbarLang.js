@@ -1,3 +1,23 @@
+let changeLanguage = document.querySelector("#selectLanguage");
+changeLanguage.addEventListener("change", function () {
+  window.localStorage.setItem("language", changeLanguage.value);
+  location.reload();
+});
+let options = document.querySelectorAll("#langItem");
+const lang = localStorage.getItem("language");
+options.forEach(function (data) {
+  // console.log(data.value);
+  if (lang == data.value) {
+    data.setAttribute("selected", "rus");
+  }
+  if (lang == data.value) {
+    data.setAttribute("selected", "eng");
+  }
+  if (lang == data.value) {
+    data.setAttribute("selected", "uzb");
+  }
+});
+
 const languages = {
   uz: {
     about: "Biz Haqimizda",
