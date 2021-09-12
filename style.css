@@ -430,7 +430,7 @@ HEADER
   );
 }
 .ft-logo-img {
-  width: 50px;
+  width: 50px !important;
 }
 .modal {
   top: 40%;

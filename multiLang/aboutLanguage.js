@@ -114,8 +114,6 @@ if (til === "eng") {
   ruleText.innerText = data.en.ruleText;
   moreRead.innerText = data.en.moreRead;
   moreSee.innerText = data.en.moreSee;
-  // aboutTitle.innerText = data.en.aboutTitle;
-  // serviceTitle.innerText = data.en.serviceTitle;
   serviceLink.innerText = data.en.serviceLink;
   newsTitle.innerText = data.en.newsTitle;
   newsText.innerText = data.en.newsText;
@@ -136,8 +134,6 @@ if (til === "eng") {
   ruleText.innerText = data.ru.ruleText;
   moreRead.innerText = data.ru.moreRead;
   moreSee.innerText = data.ru.moreSee;
-  // aboutTitle.innerText = data.ru.aboutTitle;
-  // serviceTitle.innerText = data.ru.serviceTitle;
   serviceLink.innerText = data.ru.serviceLink;
   newsTitle.innerText = data.ru.newsTitle;
   newsText.innerText = data.ru.newsText;
@@ -158,8 +154,6 @@ if (til === "eng") {
   ruleText.innerText = data.uz.ruleText;
   moreRead.innerText = data.uz.moreRead;
   moreSee.innerText = data.uz.moreSee;
-  // aboutTitle.innerText = data.uz.aboutTitle;
-  // serviceTitle.innerText = data.uz.serviceTitle;
   serviceLink.innerText = "Xizmatlar";
   newsTitle.innerText = data.uz.newsTitle;
   newsText.innerText = data.uz.newsText;
